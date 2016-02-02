@@ -1,0 +1,40 @@
+<h1>Welcome to Tripp's Travel Site</h1>
+<p>This is my very awesome travel site.</p>
+
+<p>Not including my time in <%= @homeland %></p>
+
+<p>Countries I have been to include:</p>
+
+<ul>
+	<% @countries.each do |country| %>
+	  <li><%= country %></li>
+	<% end %>
+</ul>
+
+<%= image_tag "London.jpg",
+													id: "london",
+                          class: "country",
+                          height: 300 %> 
+
+<%= image_tag "eiffel.jpg",
+													id: "london",
+                          class: "country",
+                          height: 300 %> 
+
+
+<%= image_tag "paris.jpg",
+													id: "london",
+                          class: "country",
+                          height: 300 %>
+
+
+<%= image_tag "china.jpg",
+													id: "london",
+                          class: "country",
+                          height: 300 %>
+
+<p></p>
+
+<% @country_images.each do |image_name| %>
+	  <%= image_tag image_name, height: 300 %> 
+<% end %>
